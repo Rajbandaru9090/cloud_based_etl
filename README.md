@@ -14,20 +14,6 @@ Orchestrate the full process using Apache Airflow on a cloud-friendly Docker set
 
 Set the foundation for dashboarding or AI models
 
-🏗️ Architecture Overview
-markdown
-Copy
-Edit
-       ┌────────────┐        ┌────────────┐        ┌─────────────┐
-       │  Raw Data  │──────▶│  ETL in     │──────▶│ Transformed  │
-       │ in S3      │       │  Airflow    │       │ Data in S3   │
-       └────────────┘       │  + Pandas   │       └─────────────┘
-                            └──────┬──────┘
-                                   │
-                              ┌────▼─────┐
-                              │ AWS RDS  │
-                              │PostgreSQL│
-                              └──────────┘
 🧰 Tech Stack
 Layer	Tool/Service
 Orchestration	Apache Airflow (Docker)
